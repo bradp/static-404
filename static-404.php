@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Static 404
  * Description: Quickly output a 404 for static files that aren't found, rather than loading the normal 404 page.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Brad Parbs
  * Author URI:  https://bradparbs.com/
  * License:     GPLv2
