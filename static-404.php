@@ -12,20 +12,19 @@
  * @package static-404
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+namespace Static404;
 
-// If the plugin is installed as an mu-plugin, then we can hook in earlier,
-// otherwise we need to wait until plugins_loaded.
-$static_404_hook = ! did_action( 'muplugins_loaded' ) ? 'muplugins_loaded' : 'plugins_loaded';
+defined( 'ABSPATH' ) || die();
 
 /**
- * If a request comes in for a static file and the webserver hasn't already handled it,
- * then we want to 404 as quickly as possible without loading WordPress.
+ * If a request comes in for a static file and the webserver hasn't already
+ * handled it, then we want to 404 as quickly as possible without loading WordPress.
+ *
+ * If the plugin is installed as an mu-plugin, then we can hook in earlier,
+ * otherwise we need to wait until plugins_loaded.
  */
 add_action(
-	$static_404_hook,
+	! did_action( 'muplugins_loaded' ) ? 'muplugins_loaded' : 'plugins_loaded',
 	function () {
 		// If we don't have a request, then bail out.
 		// We'll be parsing this request to determine
