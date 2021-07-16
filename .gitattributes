@@ -1,5 +1,7 @@
 /.wordpress-org export-ignore
 /.github export-ignore
 
+/.gitattributes export-ignore
+/composer.json export-ignore
 /LICENSE export-ignore
 /README.md export-ignore
