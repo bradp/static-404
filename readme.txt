@@ -2,7 +2,7 @@
 Contributors: bradparbs, surfboards
 Tags: performance, 404, errors
 Requires at least: 5.2
-Tested up to: 5.7.2
+Tested up to: 5.8
 Stable tag: 1.0.3
 License: GPLv2 or later
 Requires PHP: 5.6
