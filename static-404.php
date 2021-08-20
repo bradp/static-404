@@ -63,9 +63,9 @@ function process_request() {
 function get_early_action_to_use() {
 	if ( ! did_action( 'muplugins_loaded' ) ) {
 		return 'muplugins_loaded';
-	} else {
-		return 'plugins_loaded';
 	}
+
+	return 'plugins_loaded';
 }
 
 /**
