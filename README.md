@@ -6,9 +6,12 @@ Quickly output a 404 for static files that aren't found, rather than loading the
 
 Any static files ( images, text, pdfs, etc ) that don't exist will 404 as soon as possible, rather than loading the entire WordPress application.
 
-
 ## Details
 
 By default, the list of extensions to check are the results of `wp_get_ext_types`, but can be filtered with `static_404_extensions`.
 
 The output is a static page with the text `404 Not Found`, this text can be edited by filtering `static_404_message`.
+
+A 404 status code will be used, but can be filtered with `static_404_response_code`.
+
+Passing true to `static_404_should_process_request` will short-circuit and skip processing the request. This filter gets passed the current request.

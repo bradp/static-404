@@ -1,7 +1,12 @@
+/.php-cs-fixer.dist.php export-ignore
+/.phpcs.xml.dist export-ignore
+
 /.wordpress-org export-ignore
 /.github export-ignore
-
 /.gitattributes export-ignore
+
 /composer.json export-ignore
+/composer.lock export-ignore
+
 /LICENSE export-ignore
 /README.md export-ignore
