@@ -40,7 +40,7 @@ function process_request() {
 		return;
 	}
 
-	// Bail out if we don't have an extension or if the extension isn't in the list. )
+	// Bail out if we don't have an extension or if the extension isn't in the list.
 	$req_ext = get_request_extension();
 	if ( ! $req_ext || ! in_array( $req_ext, get_extensions(), true ) ) {
 		return;
@@ -61,7 +61,7 @@ function process_request() {
  * @return string Action to use.
  */
 function get_early_action_to_use() {
-	if ( ! did_action( 'muplugins_loaded' )  ) {
+	if ( ! did_action( 'muplugins_loaded' ) ) {
 		return 'muplugins_loaded';
 	} else {
 		return 'plugins_loaded';
